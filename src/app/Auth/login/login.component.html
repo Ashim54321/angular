@@ -1,0 +1,24 @@
+<div class="login">
+  <div class="login-form">
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()" >
+  <h1>login</h1>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="email" formControlName="email" required>
+    </div>
+    <div class="form-group mb-3">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="password" formControlName="password" required>
+    </div>
+
+    <div class="form-group mb-3">
+      <label for="exampleInputPassword1"> <a  routerLink="/signup" routerLinkActive="active">Forget password ?</a> </label>
+    </div>
+  
+    <button type="submit" class="btn btn-primary mb-4">Submit</button>
+    <div class="form-group mb-3 text-center">
+      <label for="exampleInputPassword1"> I haven't signed up <a  routerLink="/signup" routerLinkActive="active">Create Account</a> </label>
+    </div>
+  </form>
+</div>
+</div>  
